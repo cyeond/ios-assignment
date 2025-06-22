@@ -8,6 +8,11 @@
 import Foundation
 import CydDomain
 
+/**
+ Domain 레이어의 Product Entity를 이용하여 상품 리스트를 그리기 위한 모델
+ 
+ - price 숫자 표시를 3자리 단위로 나눠 표시하는 등의 리팩토링 가능
+ */
 struct ProductListItem: Hashable {
     let uuid = UUID()
     let id: String

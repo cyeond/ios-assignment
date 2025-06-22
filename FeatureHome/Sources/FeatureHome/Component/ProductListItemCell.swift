@@ -10,6 +10,15 @@ import SnapKit
 import Kingfisher
 import CydDesignSystem
 
+/**
+ 상품 리스트 UICollectionView를 그리기 위한 Cell
+ 
+ - 구성 요소
+    - 썸네일 이미지
+    - 상품 이름
+    - 가격 및 할인 정보
+    - 별점 및 리뷰 개수
+ */
 final class ProductListItemCell: UICollectionViewCell {
     static let reuseIdentifier = "ProductListItemCell"
     
@@ -81,6 +90,7 @@ final class ProductListItemCell: UICollectionViewCell {
         configureRatingLabel(rating: item.rating, reviewCount: item.reviewCount)
     }
     
+    /// 리뷰 개수가 0보다 큰 상품에 대해서만 ratingLabel을 표시
     private func configureRatingLabel(rating: Double, reviewCount: Int) {
         ratingLabel.configure(rating: rating, reviewCount: reviewCount)
         

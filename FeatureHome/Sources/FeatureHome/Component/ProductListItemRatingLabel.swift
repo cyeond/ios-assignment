@@ -9,6 +9,8 @@ import UIKit
 import CydCore
 import CydDesignSystem
 
+ 
+/// ProductListItemCell에서 별점 및 리뷰 영역을 담당하는 View
 final class ProductListItemRatingLabel: UILabel {
     func configure(rating: Double, reviewCount: Int) {
         let fullFormat = Strings.Home.ratingReviewCountFormat

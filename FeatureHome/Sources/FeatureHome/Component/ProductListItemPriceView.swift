@@ -9,6 +9,14 @@ import UIKit
 import CydCore
 import CydDesignSystem
 
+/**
+ ProductListItemCell에서 가격 표시 영역을 담당하는 View
+ 
+ - discountRate이 0보다 큰 경우
+    - originalPriceLabel, discountPriceLabel 모두 표시
+ - discountRate이 0보다 크지 않은 경우
+    - originalPriceLabel만 표시
+ */
 final class ProductListItemPriceView: UIStackView {
     private let originalPriceLabel = UILabel()
     private let discountPriceLabel = UILabel()
