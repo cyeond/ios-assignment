@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CydCore">
+   </FileRef>
+   <FileRef
+      location = "group:CydDesignSystem">
+   </FileRef>
+   <FileRef
+      location = "group:CydDomain">
+   </FileRef>
+   <FileRef
+      location = "group:CydData">
+   </FileRef>
+   <FileRef
+      location = "group:FeatureHome">
+   </FileRef>
+   <FileRef
+      location = "group:FeatureProductDetail">
+   </FileRef>
+   <FileRef
+      location = "group:CydAssignment/CydAssignment.xcodeproj">
+   </FileRef>
+</Workspace>
