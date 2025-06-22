@@ -11,6 +11,8 @@
 		78E386B12E07D2BC00277C3E /* FeatureHome in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386B02E07D2BC00277C3E /* FeatureHome */; };
 		78E386B32E07D2BD00277C3E /* FeatureHomeInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386B22E07D2BD00277C3E /* FeatureHomeInterface */; };
 		78E386CD2E07DD5700277C3E /* CydDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386CC2E07DD5700277C3E /* CydDesignSystem */; };
+		78E386F92E07FB4300277C3E /* CydData in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386F82E07FB4300277C3E /* CydData */; };
+		78E386FB2E07FB4500277C3E /* CydDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386FA2E07FB4500277C3E /* CydDomain */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +75,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				78E386B12E07D2BC00277C3E /* FeatureHome in Frameworks */,
+				78E386FB2E07FB4500277C3E /* CydDomain in Frameworks */,
 				78E386B32E07D2BD00277C3E /* FeatureHomeInterface in Frameworks */,
 				78E386CD2E07DD5700277C3E /* CydDesignSystem in Frameworks */,
 				78E386AF2E07D2B900277C3E /* CydCore in Frameworks */,
+				78E386F92E07FB4300277C3E /* CydData in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +152,8 @@
 				78E386B02E07D2BC00277C3E /* FeatureHome */,
 				78E386B22E07D2BD00277C3E /* FeatureHomeInterface */,
 				78E386CC2E07DD5700277C3E /* CydDesignSystem */,
+				78E386F82E07FB4300277C3E /* CydData */,
+				78E386FA2E07FB4500277C3E /* CydDomain */,
 			);
 			productName = CydAssignment;
 			productReference = 78E385442E07BDA400277C3E /* CydAssignment.app */;
@@ -625,6 +631,14 @@
 		78E386CC2E07DD5700277C3E /* CydDesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CydDesignSystem;
+		};
+		78E386F82E07FB4300277C3E /* CydData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CydData;
+		};
+		78E386FA2E07FB4500277C3E /* CydDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CydDomain;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

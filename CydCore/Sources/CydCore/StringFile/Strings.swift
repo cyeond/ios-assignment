@@ -9,8 +9,16 @@ public enum Strings {
 }
 
 // MARK: - For FeatureHome
-extension Strings {
-    public enum Home {
+public extension Strings {
+    enum Home {
         public static let navigationTitle = "상품"
+    }
+}
+
+// MARK: - Common Strings
+public extension Strings {
+    enum Common {
+        public static let errorAlertTitle = "에러"
+        public static let confirm = "확인"
     }
 }

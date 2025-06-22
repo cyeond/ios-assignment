@@ -10,6 +10,8 @@ import CydCore
 import CydDesignSystem
 import FeatureHome
 import FeatureHomeInterface
+import CydData
+import CydDomain
 
 class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
@@ -33,7 +35,10 @@ class MainTabBarController: UITabBarController {
     }
     
     private func setViewControllers() {
-        let homeBuilder: HomeMainViewBuildable = HomeMainViewBuilder()
+        let productRepository = ProductRepositoryImpl()
+        let fetchProductUseCase = FetchProductListUseCaseImpl(repository: productRepository)
+        
+        let homeBuilder: HomeMainViewBuildable = HomeMainViewBuilder(fetchUseCase: fetchProductUseCase)
         let homeVC = homeBuilder.build()
         let homeNav = UINavigationController(rootViewController: homeVC)
         homeNav.tabBarItem = UITabBarItem(

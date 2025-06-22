@@ -12,7 +12,8 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "CydCore", path: "../CydCore"),
-        .package(name: "CydDesignSystem", path: "../CydDesignSystem")
+        .package(name: "CydDesignSystem", path: "../CydDesignSystem"),
+        .package(name: "CydDomain", path: "../CydDomain"),
     ],
     targets: [
         .target(
@@ -24,7 +25,8 @@ let package = Package(
             dependencies: [
                 "FeatureHomeInterface",
                 .product(name: "CydCore", package: "CydCore"),
-                .product(name: "CydDesignSystem", package: "CydDesignSystem")
+                .product(name: "CydDesignSystem", package: "CydDesignSystem"),
+                .product(name: "CydDomain", package: "CydDomain")
             ]
         ),
         .testTarget(

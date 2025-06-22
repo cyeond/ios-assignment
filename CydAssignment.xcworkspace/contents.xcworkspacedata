@@ -8,6 +8,12 @@
       location = "group:CydDesignSystem">
    </FileRef>
    <FileRef
+      location = "group:CydDomain">
+   </FileRef>
+   <FileRef
+      location = "group:CydData">
+   </FileRef>
+   <FileRef
       location = "group:FeatureHome">
    </FileRef>
    <FileRef

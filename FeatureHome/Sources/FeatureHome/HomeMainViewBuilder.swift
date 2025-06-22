@@ -7,12 +7,17 @@
 
 import UIKit
 import FeatureHomeInterface
+import CydDomain
 
 public final class HomeMainViewBuilder: HomeMainViewBuildable {
-    public init() {}
-
+    private let fetchUseCase: FetchProductListUseCase
+    
+    public init(fetchUseCase: FetchProductListUseCase) {
+        self.fetchUseCase = fetchUseCase
+    }
+    
     public func build() -> UIViewController {
-        let viewModel = HomeMainViewModel()
+        let viewModel = HomeMainViewModel(fetchUseCase: fetchUseCase)
         let viewController = HomeMainViewController(viewModel: viewModel)
         return viewController
     }
