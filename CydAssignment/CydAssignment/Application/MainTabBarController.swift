@@ -8,14 +8,21 @@
 import UIKit
 import CydCore
 import CydDesignSystem
-import CydData
-import CydDomain
 import FeatureHome
 import FeatureHomeInterface
-import FeatureProductDetail
-import FeatureProductDetailInterface
 
 class MainTabBarController: UITabBarController {
+    private let homeBuilder: HomeMainViewBuildable
+
+    init(homeBuilder: HomeMainViewBuildable) {
+        self.homeBuilder = homeBuilder
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,11 +44,6 @@ class MainTabBarController: UITabBarController {
     }
     
     private func setViewControllers() {
-        let productRepository = ProductRepositoryImpl()
-        let fetchProductUseCase = FetchProductListUseCaseImpl(repository: productRepository)
-        let productDetailBuilder = ProductDetailViewBuilder()
-        
-        let homeBuilder: HomeMainViewBuildable = HomeMainViewBuilder(fetchUseCase: fetchProductUseCase, detailBuilder: productDetailBuilder)
         let homeVC = homeBuilder.build()
         let homeNav = UINavigationController(rootViewController: homeVC)
         homeNav.tabBarItem = UITabBarItem(
