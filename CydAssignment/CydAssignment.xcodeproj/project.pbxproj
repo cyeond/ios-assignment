@@ -10,6 +10,7 @@
 		78E386AF2E07D2B900277C3E /* CydCore in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386AE2E07D2B900277C3E /* CydCore */; };
 		78E386B12E07D2BC00277C3E /* FeatureHome in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386B02E07D2BC00277C3E /* FeatureHome */; };
 		78E386B32E07D2BD00277C3E /* FeatureHomeInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386B22E07D2BD00277C3E /* FeatureHomeInterface */; };
+		78E386CD2E07DD5700277C3E /* CydDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386CC2E07DD5700277C3E /* CydDesignSystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 			files = (
 				78E386B12E07D2BC00277C3E /* FeatureHome in Frameworks */,
 				78E386B32E07D2BD00277C3E /* FeatureHomeInterface in Frameworks */,
+				78E386CD2E07DD5700277C3E /* CydDesignSystem in Frameworks */,
 				78E386AF2E07D2B900277C3E /* CydCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +147,7 @@
 				78E386AE2E07D2B900277C3E /* CydCore */,
 				78E386B02E07D2BC00277C3E /* FeatureHome */,
 				78E386B22E07D2BD00277C3E /* FeatureHomeInterface */,
+				78E386CC2E07DD5700277C3E /* CydDesignSystem */,
 			);
 			productName = CydAssignment;
 			productReference = 78E385442E07BDA400277C3E /* CydAssignment.app */;
@@ -618,6 +621,10 @@
 		78E386B22E07D2BD00277C3E /* FeatureHomeInterface */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FeatureHomeInterface;
+		};
+		78E386CC2E07DD5700277C3E /* CydDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CydDesignSystem;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

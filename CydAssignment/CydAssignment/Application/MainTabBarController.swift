@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import CydCore
+import CydDesignSystem
 import FeatureHome
 import FeatureHomeInterface
 
@@ -20,10 +22,10 @@ class MainTabBarController: UITabBarController {
     private func setupViews() {
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .white
+        appearance.backgroundColor = CydColor.Common.background
         
         tabBar.isTranslucent = false
-        tabBar.tintColor = .systemBlue
+        tabBar.tintColor = CydColor.Brand.primary
         tabBar.standardAppearance = appearance
         if #available(iOS 15.0, *) {
             tabBar.scrollEdgeAppearance = appearance
@@ -35,9 +37,9 @@ class MainTabBarController: UITabBarController {
         let homeVC = homeBuilder.build()
         let homeNav = UINavigationController(rootViewController: homeVC)
         homeNav.tabBarItem = UITabBarItem(
-            title: "홈",
-            image: UIImage(systemName: "house"),
-            selectedImage: UIImage(systemName: "house.fill")
+            title: Strings.Main.homeTabTitle,
+            image: CydImage.Icon.home,
+            selectedImage: CydImage.Icon.homeSelected
         )
         
         self.setViewControllers([homeNav], animated: false)

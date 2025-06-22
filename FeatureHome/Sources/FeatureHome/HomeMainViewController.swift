@@ -2,6 +2,8 @@
 // https://docs.swift.org/swift-book
 
 import UIKit
+import CydCore
+import CydDesignSystem
 
 final class HomeMainViewController: UIViewController {
     private let viewModel: HomeMainViewModel
@@ -22,8 +24,8 @@ final class HomeMainViewController: UIViewController {
     }
 
     private func setupViews() {
-        navigationItem.title = "상품"
+        navigationItem.title = Strings.Home.navigationTitle
         navigationItem.backButtonTitle = ""
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = CydColor.Common.background
     }
 }

@@ -15,16 +15,14 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0"),
-        .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0")
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0")
     ],
     targets: [
         .target(
             name: "CydCore",
             dependencies: [
                 .product(name: "RxSwift", package: "RxSwift"),
-                .product(name: "RxCocoa", package: "RxSwift"),
-                "SnapKit"
+                .product(name: "RxCocoa", package: "RxSwift")
             ]
         ),
         .testTarget(

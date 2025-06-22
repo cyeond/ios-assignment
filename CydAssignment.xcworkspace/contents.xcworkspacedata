@@ -5,6 +5,9 @@
       location = "group:CydCore">
    </FileRef>
    <FileRef
+      location = "group:CydDesignSystem">
+   </FileRef>
+   <FileRef
       location = "group:FeatureHome">
    </FileRef>
    <FileRef
