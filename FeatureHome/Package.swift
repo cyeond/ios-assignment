@@ -14,6 +14,7 @@ let package = Package(
         .package(name: "CydCore", path: "../CydCore"),
         .package(name: "CydDesignSystem", path: "../CydDesignSystem"),
         .package(name: "CydDomain", path: "../CydDomain"),
+        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "7.0.0")
     ],
     targets: [
         .target(
@@ -26,7 +27,8 @@ let package = Package(
                 "FeatureHomeInterface",
                 .product(name: "CydCore", package: "CydCore"),
                 .product(name: "CydDesignSystem", package: "CydDesignSystem"),
-                .product(name: "CydDomain", package: "CydDomain")
+                .product(name: "CydDomain", package: "CydDomain"),
+                .product(name: "Kingfisher", package: "Kingfisher")
             ]
         ),
         .testTarget(

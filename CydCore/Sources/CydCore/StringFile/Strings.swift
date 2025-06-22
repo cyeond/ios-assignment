@@ -12,6 +12,11 @@ public enum Strings {
 public extension Strings {
     enum Home {
         public static let navigationTitle = "상품"
+        public static let currencyWon = "원"
+        public static let discountPriceFormat = "%d%% %d원"
+        public static let ratingFormat = "★%.1f점"
+        public static let reviewCountFormat = "%d건"
+        public static let ratingReviewCountFormat = "★%.1f점 %d건"
     }
 }
 

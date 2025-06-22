@@ -8,4 +8,5 @@ public extension CydColor.Common {
     static let textPrimary = UIColor.black
     static let textSecondary = UIColor.gray
     static let accentRed = UIColor(red: 233/255.0, green: 0/255.0, blue: 63/255.0, alpha: 1.0)
+    static let accentGray = UIColor.darkGray
 }
