@@ -32,5 +32,6 @@ public extension Strings {
 public extension Strings {
     enum ProductDetail {
         public static let navigationTitle = "상품 상세"
+        public static let urlErrorMessage = "URL 불러오기에 실패하였습니다."
     }
 }

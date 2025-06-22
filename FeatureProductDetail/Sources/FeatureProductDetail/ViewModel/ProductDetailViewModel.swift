@@ -5,12 +5,12 @@
 //  Created by YD on 6/22/25.
 //
 
-import CydDomain
+import Foundation
 
 final class ProductDetailViewModel {
-    let product: Product
+    let linkUrl: String
 
-    init(product: Product) {
-        self.product = product
+    init(linkUrl: String) {
+        self.linkUrl = linkUrl
     }
 }

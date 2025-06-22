@@ -6,8 +6,7 @@
 //
 
 import UIKit
-import CydDomain
 
 public protocol ProductDetailViewBuildable {
-    func build(product: Product) -> UIViewController
+    func build(linkUrl: String) -> UIViewController
 }

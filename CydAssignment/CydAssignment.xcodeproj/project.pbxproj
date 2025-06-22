@@ -13,6 +13,8 @@
 		78E386CD2E07DD5700277C3E /* CydDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386CC2E07DD5700277C3E /* CydDesignSystem */; };
 		78E386F92E07FB4300277C3E /* CydData in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386F82E07FB4300277C3E /* CydData */; };
 		78E386FB2E07FB4500277C3E /* CydDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386FA2E07FB4500277C3E /* CydDomain */; };
+		78E387122E08164F00277C3E /* FeatureProductDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 78E387112E08164F00277C3E /* FeatureProductDetail */; };
+		78E387142E08165300277C3E /* FeatureProductDetailInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 78E387132E08165300277C3E /* FeatureProductDetailInterface */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 				78E386CD2E07DD5700277C3E /* CydDesignSystem in Frameworks */,
 				78E386AF2E07D2B900277C3E /* CydCore in Frameworks */,
 				78E386F92E07FB4300277C3E /* CydData in Frameworks */,
+				78E387142E08165300277C3E /* FeatureProductDetailInterface in Frameworks */,
+				78E387122E08164F00277C3E /* FeatureProductDetail in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +158,8 @@
 				78E386CC2E07DD5700277C3E /* CydDesignSystem */,
 				78E386F82E07FB4300277C3E /* CydData */,
 				78E386FA2E07FB4500277C3E /* CydDomain */,
+				78E387112E08164F00277C3E /* FeatureProductDetail */,
+				78E387132E08165300277C3E /* FeatureProductDetailInterface */,
 			);
 			productName = CydAssignment;
 			productReference = 78E385442E07BDA400277C3E /* CydAssignment.app */;
@@ -639,6 +645,14 @@
 		78E386FA2E07FB4500277C3E /* CydDomain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CydDomain;
+		};
+		78E387112E08164F00277C3E /* FeatureProductDetail */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureProductDetail;
+		};
+		78E387132E08165300277C3E /* FeatureProductDetailInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureProductDetailInterface;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

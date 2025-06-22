@@ -6,14 +6,13 @@
 //
 
 import UIKit
-import CydDomain
 import FeatureProductDetailInterface
 
 public final class ProductDetailViewBuilder: ProductDetailViewBuildable {
     public init() {}
     
-    public func build(product: Product) -> UIViewController {
-        let viewModel = ProductDetailViewModel(product: product)
+    public func build(linkUrl: String) -> UIViewController {
+        let viewModel = ProductDetailViewModel(linkUrl: linkUrl)
         let viewController = ProductDetailViewController(viewModel: viewModel)
         return viewController
     }

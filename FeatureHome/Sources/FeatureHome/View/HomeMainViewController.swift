@@ -3,13 +3,16 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 import SnapKit
 import CydCore
 import CydDesignSystem
 import CydDomain
+import FeatureProductDetailInterface
 
 final class HomeMainViewController: UIViewController {
     private let viewModel: HomeMainViewModel
+    private let detailBuilder: ProductDetailViewBuildable
     private var productListCollectionViewDataSource: UICollectionViewDiffableDataSource<ProductListSection, ProductListItem>?
     private let disposeBag = DisposeBag()
 
@@ -23,8 +26,9 @@ final class HomeMainViewController: UIViewController {
         return collectionView
     }()
     
-    init(viewModel: HomeMainViewModel) {
+    init(viewModel: HomeMainViewModel, detailBuilder: ProductDetailViewBuildable) {
         self.viewModel = viewModel
+        self.detailBuilder = detailBuilder
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -80,6 +84,18 @@ final class HomeMainViewController: UIViewController {
                 let alert = UIAlertController(title: Strings.Common.errorAlertTitle, message: message, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: Strings.Common.confirm, style: .default))
                 self?.present(alert, animated: true)
+            })
+            .disposed(by: disposeBag)
+        
+        productListCollectionView.rx.itemSelected
+            .compactMap { [weak self] indexPath in
+                self?.productListCollectionView.deselectItem(at: indexPath, animated: true)
+                return self?.productListCollectionViewDataSource?.itemIdentifier(for: indexPath)
+            }
+            .subscribe(onNext: { [weak self] item in
+                guard let self = self else { return }
+                let detailVC = self.detailBuilder.build(linkUrl: item.linkUrl)
+                self.navigationController?.pushViewController(detailVC, animated: true)
             })
             .disposed(by: disposeBag)
     }

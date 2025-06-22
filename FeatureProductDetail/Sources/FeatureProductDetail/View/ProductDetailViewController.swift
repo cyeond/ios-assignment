@@ -46,8 +46,10 @@ final class ProductDetailViewController: UIViewController {
     }
 
     private func loadProductLink() {
-        guard let url = URL(string: viewModel.product.linkUrl) else {
-            // 에러 처리
+        guard let url = URL(string: viewModel.linkUrl) else {
+            let alert = UIAlertController(title: Strings.Common.errorAlertTitle, message: Strings.ProductDetail.urlErrorMessage, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: Strings.Common.confirm, style: .default))
+            present(alert, animated: true)
             return
         }
 
