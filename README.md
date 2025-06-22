@@ -55,7 +55,7 @@ CydAssignment(Main App)
 1. 이 저장소를 클론합니다.
 2. Xcode에서 `CydAssignment.xcworkspace` 열기  
 3. 실행 (`⌘R`)  
-> 실제 기기에서 실행하는 경우 CydAssignment Target Setting -> General -> Signing 설정이 필요합니다.
+> 실제 기기에서 실행하는 경우 CydAssignment Target Setting -> Signing & Capabilities -> Signing 설정이 필요합니다.
 
 ---
 
