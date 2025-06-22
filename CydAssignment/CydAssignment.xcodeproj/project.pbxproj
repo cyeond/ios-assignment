@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		78E386AF2E07D2B900277C3E /* CydCore in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386AE2E07D2B900277C3E /* CydCore */; };
+		78E386B12E07D2BC00277C3E /* FeatureHome in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386B02E07D2BC00277C3E /* FeatureHome */; };
+		78E386B32E07D2BD00277C3E /* FeatureHomeInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 78E386B22E07D2BD00277C3E /* FeatureHomeInterface */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		78E3855B2E07BDA500277C3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E386B12E07D2BC00277C3E /* FeatureHome in Frameworks */,
+				78E386B32E07D2BD00277C3E /* FeatureHomeInterface in Frameworks */,
+				78E386AF2E07D2B900277C3E /* CydCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +100,7 @@
 				78E385462E07BDA400277C3E /* CydAssignment */,
 				78E3855D2E07BDA500277C3E /* CydAssignmentTests */,
 				78E385672E07BDA500277C3E /* CydAssignmentUITests */,
+				78E386772E07D20E00277C3E /* Frameworks */,
 				78E385452E07BDA400277C3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +113,13 @@
 				78E385642E07BDA500277C3E /* CydAssignmentUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		78E386772E07D20E00277C3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +142,9 @@
 			);
 			name = CydAssignment;
 			packageProductDependencies = (
+				78E386AE2E07D2B900277C3E /* CydCore */,
+				78E386B02E07D2BC00277C3E /* FeatureHome */,
+				78E386B22E07D2BD00277C3E /* FeatureHomeInterface */,
 			);
 			productName = CydAssignment;
 			productReference = 78E385442E07BDA400277C3E /* CydAssignment.app */;
@@ -585,6 +605,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78E386AE2E07D2B900277C3E /* CydCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CydCore;
+		};
+		78E386B02E07D2BC00277C3E /* FeatureHome */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureHome;
+		};
+		78E386B22E07D2BD00277C3E /* FeatureHomeInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureHomeInterface;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78E3853C2E07BDA400277C3E /* Project object */;
 }
