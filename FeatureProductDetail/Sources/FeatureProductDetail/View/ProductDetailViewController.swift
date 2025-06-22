@@ -10,7 +10,7 @@ import CydDesignSystem
 final class ProductDetailViewController: UIViewController {
     private let viewModel: ProductDetailViewModel
     
-    private let webView: WKWebView = {
+    let webView: WKWebView = {
         let config = WKWebViewConfiguration()
         config.allowsInlineMediaPlayback = true
         config.mediaTypesRequiringUserActionForPlayback = []

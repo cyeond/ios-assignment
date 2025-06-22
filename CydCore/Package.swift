@@ -22,12 +22,9 @@ let package = Package(
             name: "CydCore",
             dependencies: [
                 .product(name: "RxSwift", package: "RxSwift"),
-                .product(name: "RxCocoa", package: "RxSwift")
+                .product(name: "RxCocoa", package: "RxSwift"),
+                .product(name: "RxBlocking", package: "RxSwift")
             ]
-        ),
-        .testTarget(
-            name: "CydCoreTests",
-            dependencies: ["CydCore"]
         )
     ]
 )

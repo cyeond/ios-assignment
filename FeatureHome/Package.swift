@@ -35,7 +35,11 @@ let package = Package(
         ),
         .testTarget(
             name: "FeatureHomeTests",
-            dependencies: ["FeatureHome"]
+            dependencies: [
+                "FeatureHome",
+                .product(name: "CydCore", package: "CydCore"),
+                .product(name: "CydDomain", package: "CydDomain")
+            ]
         )
     ]
 )
