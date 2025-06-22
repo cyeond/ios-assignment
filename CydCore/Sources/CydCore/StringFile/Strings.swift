@@ -1,6 +1,14 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
 
+// MARK: - Common Strings
+public extension Strings {
+    enum Common {
+        public static let errorAlertTitle = "에러"
+        public static let confirm = "확인"
+    }
+}
+
 // MARK: - For Main Target
 public enum Strings {
     public enum Main {
@@ -22,8 +30,7 @@ public extension Strings {
 
 // MARK: - Common Strings
 public extension Strings {
-    enum Common {
-        public static let errorAlertTitle = "에러"
-        public static let confirm = "확인"
+    enum ProductDetail {
+        public static let navigationTitle = "상품 상세"
     }
 }

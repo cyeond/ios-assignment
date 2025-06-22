@@ -17,6 +17,9 @@
       location = "group:FeatureHome">
    </FileRef>
    <FileRef
+      location = "group:FeatureProductDetail">
+   </FileRef>
+   <FileRef
       location = "group:CydAssignment/CydAssignment.xcodeproj">
    </FileRef>
 </Workspace>
